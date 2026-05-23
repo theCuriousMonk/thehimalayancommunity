@@ -382,6 +382,10 @@
         line-height: 1.75;
       }
 
+      .quiet-note {
+        max-width: 38rem;
+      }
+
       .pulse-grid {
         display: grid;
         grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -389,7 +393,7 @@
       }
 
       .moment {
-        min-height: 16rem;
+        min-height: 18rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -484,7 +488,7 @@
         position: relative;
         z-index: 1;
         margin: 0;
-        max-width: 13ch;
+        max-width: 10ch;
         font-family: Georgia, "Times New Roman", serif;
         font-size: clamp(2rem, 4vw, 4.4rem);
         line-height: 0.92;
@@ -494,9 +498,10 @@
         position: relative;
         z-index: 1;
         margin: 0;
-        max-width: 35ch;
+        max-width: 19ch;
         color: var(--muted);
-        line-height: 1.55;
+        font-size: clamp(1rem, 1.35vw, 1.18rem);
+        line-height: 1.38;
       }
 
       .mini-illo {
@@ -558,7 +563,7 @@
       }
 
       .initiative {
-        min-height: 27rem;
+        min-height: 22rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -581,7 +586,8 @@
       .initiative p {
         margin: 1.2rem 0 0;
         color: var(--muted);
-        line-height: 1.7;
+        font-size: clamp(1rem, 1.5vw, 1.16rem);
+        line-height: 1.42;
       }
 
       .chips {
@@ -774,10 +780,10 @@
         display: flex;
         justify-content: space-between;
         gap: 1rem;
-        padding-block: 0.75rem;
+        padding-block: 0.9rem;
         border-bottom: 1px solid var(--line);
         color: rgba(247, 242, 232, 0.76);
-        font-size: 0.86rem;
+        font-size: 0.92rem;
       }
 
       .signal-list strong {
@@ -1188,9 +1194,8 @@
           <h1>The pulse of the mountain.</h1>
           <div class="hero-copy">
             <p>
-              A living cultural umbrella from Rakkar and the Dhauladhars, collecting mountain stays,
-              cafes, trails, offroad routes, festivals, local stories, electric rides, AI literacy,
-              and creative work with a genuine valley pulse.
+              A living map of mountain life, local culture, stays, routes, stories, and community
+              work from Rakkar.
             </p>
             <div class="time-card" aria-live="polite">
               <strong id="phase-label">Valley light</strong>
@@ -1215,11 +1220,7 @@
               <p class="eyebrow"><span class="emoji" aria-hidden="true">✨</span>Living mountain index</p>
               <h2>Stillness, but never static.</h2>
             </div>
-            <p>
-              The Himalayan Community is a showcase layer for the people and places that make the
-              valley breathe: what to visit, where to stay, where to sit, where to ride, and what is
-              quietly happening under the ridge.
-            </p>
+            <p class="quiet-note">Six quiet signals from the valley. Enough to follow. Not enough to flatten it.</p>
           </div>
 
           <div class="pulse-grid">
@@ -1236,7 +1237,7 @@
                   </svg>
                 </div>
                 <h3>Rooms that breathe.</h3>
-                <p>Homestays, quiet corners, work-friendly spaces, and mountain houses with actual warmth.</p>
+                <p>Homestays with warmth.</p>
               </div>
             </article>
             <article class="moment" data-reveal>
@@ -1251,7 +1252,7 @@
                   </svg>
                 </div>
                 <h3>Roads with memory.</h3>
-                <p>Offroad bends, ridge walks, waterfalls, soft detours, and routes that locals still trust.</p>
+                <p>Trails, bends, ridges.</p>
               </div>
             </article>
             <article class="moment" data-reveal>
@@ -1268,7 +1269,7 @@
                   </svg>
                 </div>
                 <h3>Cafes, fires, festivals.</h3>
-                <p>Restaurants, community tables, cultural nights, village celebrations, and people outside.</p>
+                <p>Tables that gather people.</p>
               </div>
             </article>
             <article class="moment" data-reveal>
@@ -1284,7 +1285,7 @@
                   </svg>
                 </div>
                 <h3>Balance on one wheel.</h3>
-                <p>EUC training, clean commutes, guided rides, and rentals for riders who can move safely.</p>
+                <p>Train. Ride. Commute.</p>
               </div>
             </article>
             <article class="moment" data-reveal>
@@ -1299,7 +1300,7 @@
                   </svg>
                 </div>
                 <h3>Tomorrow in local hands.</h3>
-                <p>Cyberscout brings tablet education and AI awareness to young learners in Rakkar and Tikri Musehra.</p>
+                <p>AI literacy for local kids.</p>
               </div>
             </article>
             <article class="moment" data-reveal>
@@ -1314,7 +1315,7 @@
                   </svg>
                 </div>
                 <h3>Mountain-made work.</h3>
-                <p>HackerLabs connects designers and developers with aligned gigs, startups, and useful projects.</p>
+                <p>Design and dev from here.</p>
               </div>
             </article>
           </div>
@@ -1382,15 +1383,11 @@
           <div class="map-copy" data-reveal>
             <p class="eyebrow"><span class="emoji" aria-hidden="true">🗺️</span>A cultural map, not a tourist trap</p>
             <h2>Follow the local signal.</h2>
-            <p>
-              The site can grow into a high-quality collection of posts, reels, images, and notes:
-              homestays, spaces that feel breathing, cafes and restaurants, offroad locations,
-              local festivities, and social participation that feels current because it is current.
-            </p>
+            <p>Kangra Valley. Rakkar. Dharamshala. Dhauladhar routes. Real places, shared slowly.</p>
             <div class="signal-list">
-              <div><strong>🧭 For travellers</strong><span>Find the mountain without flattening it.</span></div>
-              <div><strong>🏡 For locals</strong><span>Showcase real places, people, and work.</span></div>
-              <div><strong>⚡ For collaborators</strong><span>Build, teach, ride, document, contribute.</span></div>
+              <div><strong>🧭 Travellers</strong><span>Arrive softer.</span></div>
+              <div><strong>🏡 Locals</strong><span>Show what is real.</span></div>
+              <div><strong>⚡ Collaborators</strong><span>Build with the valley.</span></div>
             </div>
           </div>
         </section>
@@ -1399,12 +1396,9 @@
           <div class="section-heading" data-reveal>
             <div>
               <p class="eyebrow"><span class="emoji" aria-hidden="true">🌱</span>Community initiatives</p>
-              <h2>Profitable and non-profit work under one roof.</h2>
+              <h2>Three ways the pulse moves.</h2>
             </div>
-            <p>
-              The parent umbrella stays cultural and alive, while each initiative carries a clear
-              function: education, creative work, and future mountain mobility.
-            </p>
+            <p class="quiet-note">Learning, building, and moving through the mountains differently.</p>
           </div>
 
           <div class="initiatives">
@@ -1412,16 +1406,12 @@
               <div>
                 <span class="initiative-label"><span class="emoji" aria-hidden="true">📚</span>Non-profit education</span>
                 <h3>Cyberscout</h3>
-                <p>
-                  Tablet-enabled learning and AI literacy for young learners in Rakkar and Tikri Musehra.
-                  A grounded effort to make future tools understandable, useful, and locally accessible.
-                </p>
+                <p>Tablet learning and AI literacy for young learners in Rakkar and Tikri Musehra.</p>
               </div>
               <div>
                 <div class="chips">
-                  <span class="chip">AI awareness</span>
+                  <span class="chip">AI literacy</span>
                   <span class="chip">Tablet learning</span>
-                  <span class="chip">Rural literacy</span>
                 </div>
                 <p><a class="initiative-link" href="https://thecuriousmonk.github.io/cyberscout">Visit Cyberscout</a></p>
               </div>
@@ -1431,17 +1421,12 @@
               <div>
                 <span class="initiative-label"><span class="emoji" aria-hidden="true">💻</span>Builder collective</span>
                 <h3>HackerLabs</h3>
-                <p>
-                  A non-registered umbrella for designers, developers, and technical collaborators
-                  building web and mobile products from the Himalayas, using modern AI tools, and
-                  collaborating on aligned gigs, startup work, digital systems, and useful experiments.
-                </p>
+                <p>Designers and developers building web, mobile, AI, and startup work from the Himalayas.</p>
               </div>
               <div>
                 <div class="chips">
                   <span class="chip">Design</span>
                   <span class="chip">Development</span>
-                  <span class="chip">Startups</span>
                 </div>
                 <p><a class="initiative-link" href="https://hackerlabs.in">Visit HackerLabs</a></p>
               </div>
@@ -1451,16 +1436,12 @@
               <div>
                 <span class="initiative-label"><span class="emoji" aria-hidden="true">🛞</span>Future mobility</span>
                 <h3>EUC Club</h3>
-                <p>
-                  Electric unicycle training, guided mountain rides, clean short commutes, and rentals
-                  for riders who have learned the balance and passed a basic safety check.
-                </p>
+                <p>Electric unicycle training, rentals, clean commutes, and guided mountain rides.</p>
               </div>
               <div>
                 <div class="chips">
                   <span class="chip">Training</span>
                   <span class="chip">Rentals</span>
-                  <span class="chip">Commutes</span>
                 </div>
                 <p><a class="initiative-link" href="https://www.instagram.com/euc.club">Follow @euc.club</a></p>
               </div>
@@ -1473,8 +1454,8 @@
             <p class="eyebrow"><span class="emoji" aria-hidden="true">📡</span>Send a signal</p>
             <h2>The valley is the interface.</h2>
             <p>
-              Come for the mountains. Stay for the people, the work, the strange clean rides,
-              the classroom moments, the cafe conversations, and the stillness that somehow keeps moving.
+              Come for the mountains. Stay for the people, the work, the rides, the classroom
+              moments, and the stillness that keeps moving.
             </p>
             <div class="actions">
               <a class="button primary" href="https://www.instagram.com/the.himalayan.community/">DM on Instagram</a>
